@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+  
+
+  function mul(a, b) {
+  return a * b;
+}
+
+var doubleMul = mul.bind(null, 2); 
+var qudraMul = mul.bind(null, 4); 
+
+console.log(doubleMul(5)); 
+console.log(qudraMul(5)); 
+
+
+        </script>
+</body>
+</html>
