@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+  
+
+  var country = {
+  name: "Ukraine",
+  language: "ukrainian",
+  capital: {
+    name: "Kyiv",
+    population: 2907817,
+    area: 847.66,
+  },
+};
+function format(beginMsg, endMsg) {
+  console.log(beginMsg + this.name + endMsg);
+}
+format.call(country, "<", ">");
+format.apply(country, ["[", "]"]); 
+format.call(country.capital, '"', '"'); 
+format.apply(country.capital, ['"', '"']);
+
+
+        </script>
+</body>
+</html>
